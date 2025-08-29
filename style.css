@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle, #ffdde1, #ee9ca7);
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #e20808;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 15px 0;
+  color: #f80303;
+}
+
+.botoes {
+  margin: 20px;
+}
+
+button {
+  font-size: 1.2em;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#btnSim {
+  background: #ff4081;
+  color: #f80303;
+}
+
+#btnNao {
+  background: #444;
+  color: #f80303;
+  position: relative;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.resultado {
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #f80303;
+}
+
+.carrossel img {
+  max-width: 250px;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.coracao, .fogo-particula {
+  position: fixed;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.coracao {
+  font-size: 24px;
+  animation: subir 4s linear forwards;
+}
+
+@keyframes subir {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-600px); opacity: 0; }
+}

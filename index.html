@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pedido Especial 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1 id="titulo"></h1>
+  <p id="mensagem">Você aceita namorar comigo?</p>
+
+  <div class="botoes">
+    <button id="btnSim">Sim 💘</button>
+    <button id="btnNao">Não 💔</button>
+  </div>
+
+  <div id="resultado" class="resultado"></div>
+  <div id="carrossel" class="carrossel"></div>
+</div>
+
+<audio id="musica" preload="auto">
+  <source src="musica.mp3" type="audio/mpeg">
+  <source src="musica.wav" type="audio/wav">
+  Seu navegador não suporta áudio HTML5.
+</audio>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
